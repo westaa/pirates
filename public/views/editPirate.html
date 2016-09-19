@@ -1,0 +1,10 @@
+<div ng-repeat="pirate in view.pirate" ng-controller="piratesController">
+<a ng-href="/#/">Home</a>
+<form ng-submit="view.update(pirate)">
+  <input type="text" value="{{pirate.name}}" ng-model="pirate.name">
+  <input type="text" value="{{pirate.accessory}}" ng-model="pirate.accessory">
+  <input type="text" value="{{pirate.poison}}" ng-model="pirate.poison">
+  <input type="text" value="{{pirate.image_url}}" ng-model="pirate.image_url">
+  <input type="submit" value="Update Pirate">
+</form>
+<div>

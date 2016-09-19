@@ -1,9 +1,17 @@
 var app = angular.module('pirates', ['ngRoute']);
 
-app.config(function($routeProvider){
+app.config(function($routeProvider, $httpProvider){
   $routeProvider
-    .when('/pirates',{
-      templateUrl: "/views/pirates.html",
+    .when('/',{
+      templateUrl:"/views/pirates.html",
+      controller: "piratesController"
+    })
+    .when('/add',{
+      templateUrl: "/views/addpirate.html",
+      controller: "piratesController"
+    })
+    .when('/:pirateId/edit', {
+      templateUrl: "/views/editPirate.html",
       controller: "piratesController"
     })
 })

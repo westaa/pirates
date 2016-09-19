@@ -1,3 +1,25 @@
 <a ng-href="/#/">Home</a>
 <h1>Welcome to my pirates page, yargh!!!</h1>
 {{view.greeting}}
+<br>
+<br>
+
+<table>
+  <tr>
+    <th><h4>Name</h4></th>
+    <th><h4>Accessory</h4></th>
+    <th><h4>Poision</h4></th>
+    <th><h4>Image</h4></th>
+    <th><h4>Edit/Delete</h4></th>
+  </tr>
+<br>
+  <tr ng-repeat="pirate in view.pirates" class="pirates">
+    <td><h5>{{pirate.name}}</h5></td>
+    <td><h5>{{pirate.accessory}}</h5></td>
+    <td><h5>{{pirate.poison}}</h5></td>
+    <td><img ng-src="{{pirate.image_url}}"></td>
+    <td><a ng-href="/#/{{pirate.id}}/edit"><h3>Edit</h3></a>
+    <a ng-href="/{{pirate.id}}/delete"><h3>Delete</h3></a>
+    </td>
+  </tr>
+</table>

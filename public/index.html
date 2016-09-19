@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-route.js"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
   <script type="text/javascript" src="javascripts/controllers/controller.js"></script>
+  <script type="text/javascript" src="javascripts/services/pirates-service.js"></script>
   <title>Document</title>
 </head>
 <body>
@@ -21,9 +23,10 @@
   </div>
 </nav>
 
-<a ng-href="/#/pirates">Pirates Page</a>
+<a ng-href="/#/add">Add Pirate</a>
 <div ng-view>
 </div>
+
 
 </body>
 </html>

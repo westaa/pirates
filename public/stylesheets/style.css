@@ -1,3 +1,30 @@
+td img{
+  max-width: 15vw;
+  max-height: 15vh;
+  margin-left:auto;
+  margin-right:auto;
+}
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: middle;
+  align-content: center;
+  width: 87.5vw;
+  margin: auto;
+}
+tr td {
+  border: solid;
+  border-width:thin;
+  border-color: grey;
+  width: 17.5vw;
+  text-align: center;
+  align-items: middle;
+}
+tr th{
+  text-align: center;
+}
+
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -5,4 +32,44 @@ body {
 
 a {
   color: #00B7FF;
+}
+/*// ADD PIRATE VIEW*/
+form {
+  display: flex;
+  flex-direction: column;
+
+  width: 50vw;
+}
+form input {
+  margin-top: 2vh;
+}
+.formContainer {
+  width: 60vw;
+  height: 40vh;
+  border-color: grey;
+  border-style: solid;
+  border-width: thin;
+  background: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+form input[type=text]{
+  width: 50vw;
+  height: 5vh;
+  padding: 0 0 0 0;
+  border-width: thin;
+  border-color: grey;
+  border-style: solid;
+  font-size: 1.7em;
+  padding-left: 2vw;
+}
+form input[type=submit]{
+  background: green;
+  color: white;
+  font-size: 2em;
+  width: 15vw;
+  margin: auto;
+  margin-top: 2vh;
 }
